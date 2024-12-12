@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2em;
+  color: #ff6b6b;
+  margin: 15px 0;
+}
+
+.gif {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.btn-group {
+  margin-top: 50px;
+  position: relative;
+  height: 40px;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  font-size: 1.2em;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #e94d58;
+}
+
+button.yes-btn {
+  background: #e94d58;
+  color: white;
+}
+
+button.no-btn {
+  background: white;
+  color: #e94d58;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.love-message {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #ff6b6b;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
